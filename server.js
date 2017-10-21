@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 2000;
 var app = express();
 app.set('veiw engine', 'hbs');
 
@@ -45,6 +45,7 @@ app.get('/', (req, res) => { //dynamic
 app.get('/project', (req, res) => { //dynamic
     res.render('home.hbs', {
       pageTitle: 'About Page',
+      greating: 'Welcome Page'
 
   })
 })
