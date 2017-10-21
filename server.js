@@ -42,6 +42,12 @@ app.get('/', (req, res) => { //dynamic
 
   })
 })
+app.get('/project', (req, res) => { //dynamic
+    res.render('home.hbs', {
+      pageTitle: 'About Page',
+
+  })
+})
 app.get('/about', (request, response) => {
 
   response.render('about.hbs', { //dynamic
